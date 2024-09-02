@@ -72,6 +72,8 @@
 
 .inside__wrapper--info-item:nth-of-type(3)::after {
     background-image: url(/img/instruments.svg);
+    -webkit-mask: url(/img/instruments.svg) center / contain no-repeat;
+    mask: url(/img/instruments.svg) center / contain no-repeat;
 }
 
 .inside__wrapper--info-item:nth-of-type(4)::after {

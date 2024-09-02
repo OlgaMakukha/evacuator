@@ -5,6 +5,8 @@
 @import url(blocks-css/infoCall.css);
 @import url(blocks-css/about.css);
 @import url(blocks-css/inside.css);
+@import url(blocks-css/advantages.css);
+@import url(blocks-css/slider.css);
 
 :root {
 	--color-blue: #0297d4;
