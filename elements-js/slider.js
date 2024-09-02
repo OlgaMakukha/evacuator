@@ -18,11 +18,11 @@ function initSlider() {
 
         if (window.innerWidth < 1080) {
             sliderItemsInner.forEach((item, i) => {
-                item.style.display = (Math.floor(i / 2) === index && i % 2 === innerIdx) ? 'block' : 'none';
+                item.classList.toggle('slider__item--visible', Math.floor(i / 2) === index && i % 2 === innerIdx);
             });
         } else {
             sliderItemsInner.forEach((item, i) => {
-                item.style.display = Math.floor(i / 2) === index ? 'block' : 'none';
+                item.classList.toggle('slider__item--visible', Math.floor(i / 2) === index);
             });
         }
     }
