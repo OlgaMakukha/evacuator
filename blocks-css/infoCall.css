@@ -1,0 +1,40 @@
+.info__call {
+    padding: 10rem 2rem;
+}
+
+.info__call--wrapper {
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 3.9rem;
+}
+
+.info__call--text {
+    width: 100%;
+    max-width: 698px;
+}
+
+.info__call--text h2 {
+    margin-bottom: 4.8rem;
+    color: var(--color-dark);
+}
+
+.info__call--text h4:first-of-type {
+    margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .info__call--wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info__call--text {
+        max-width: 100%;
+    }
+}
