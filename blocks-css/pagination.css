@@ -55,18 +55,18 @@
 }
 
 .pagination__item--previous {
-    background-image: url(/img/next.svg);
+    background-image: url(../img/next.svg);
     transform: rotate(180deg);
 }
 
 .pagination__item--next {
-    background-image: url(/img/next.svg);
+    background-image: url(../img/next.svg);
 }
 
 .pagination__item--previous:hover,
 .pagination__item--next:hover {
     background-color: var(--color-blue);
-    background-image: url(/img/nextWhite.svg);
+    background-image: url(../img/nextWhite.svg);
 }
 
 .pagination__item--active,

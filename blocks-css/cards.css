@@ -93,12 +93,12 @@
 }
 
 .cards__btn:first-child::before {
-    background: url(/img/phone.svg) no-repeat center;
+    background: url(../img/phone.svg) no-repeat center;
     background-size: contain;
 }
 
 .cards__btn:last-child::before {
-    background: url(/img/tel.svg) no-repeat center;
+    background: url(../img/tel.svg) no-repeat center;
     background-size: contain;
 }
 
@@ -132,7 +132,7 @@
 
     display: inline-block;
     vertical-align: middle;
-    background: url(/img/map.svg) no-repeat;
+    background: url(../img/map.svg) no-repeat;
 
     transition: all 0.5s;
 }

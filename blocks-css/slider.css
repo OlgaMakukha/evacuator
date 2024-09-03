@@ -61,7 +61,7 @@
     transform: translate(-50%, -50%) rotate(180deg);
     width: 24px;
     height: 24px;
-    background-image: url(/img/next.svg);
+    background-image: url(../img/next.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -69,16 +69,16 @@
 }
 
 .prev-btn:hover::before {
-    background-image: url(/img/nextWhite.svg);
+    background-image: url(../img/nextWhite.svg);
 }
 
 .next-btn::before {
-    background-image: url(/img/next.svg);
+    background-image: url(../img/next.svg);
     transform: translate(-50%, -50%) rotate(0);
 }
 
 .next-btn:hover::before {
-    background-image: url(/img/nextWhite.svg);
+    background-image: url(../img/nextWhite.svg);
 }
 
 .slider__wrapper--items {
