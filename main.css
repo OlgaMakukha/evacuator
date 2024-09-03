@@ -7,6 +7,7 @@
 @import url(blocks-css/inside.css);
 @import url(blocks-css/advantages.css);
 @import url(blocks-css/slider.css);
+@import url(blocks-css/info.css);
 
 :root {
 	--color-blue: #0297d4;

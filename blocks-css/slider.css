@@ -36,8 +36,8 @@
 }
 
 .slider__btn {
-    width: 52px;
-    height: 52px;
+    width: 5.2rem;
+    height: 5.2rem;
     position: relative;
 
     background-color: transparent;
@@ -96,7 +96,7 @@
 .slider__wrapper--item {
     width: 100%;
     max-width: 684px;
-    min-height: 682px;
+    height: 682px;
     border-radius: 20px;
     padding: 4rem;
 
@@ -149,7 +149,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 495px) {
     .slider {
         padding: 35rem 2rem 14rem;
     }
@@ -161,5 +161,10 @@
 
     .slider__wrapper--contant {
         gap: 1rem;
+    }
+
+    .slider__wrapper--item {
+        height: 100%;
+        min-height: 682px;
     }
 }
