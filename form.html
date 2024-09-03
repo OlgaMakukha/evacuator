@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evacuator-form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__wrapper">
+            <a href="index.html" class="header-logo">
+                <img src="img/Logo-header.svg" alt="logo-evacuator" width="112" height="112">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#advantages" class="text-p">О проекте</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#footer" class="text-p">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="btn header__btn">Добавить объявление</a>
+        </div>
+    </header>
+
+    <section class="banner__form">
+        <div class="banner__form--wrapper">
+            <h1>Создание объявления</h1>
+        </div>
+    </section>
+
+    <section class="form__text">
+        <div class="form__text--wrapper">
+            <h4>Заполните все поля формы на размещение своего объявления на сайте.<br> Размещение объявления платное. Стоимость за одно объявление составляет <span>990 руб.</span><br> Объявление будет опубликовано на сайте после оплаты и проверки модератором.</h4>
+        </div>
+    </section>
+
+    <section class="form">
+        <div class="form__wrapper">
+            <form class="form__contact">
+                <div class="form__group">
+                    <label for="city" class="form__label">Выберете город</label>
+                    <select name="city" id="city" class="form__input" required>
+                        <option value="mockow">Москва</option>
+                        <option value="saint-petersburg">Санкт-Петербург</option>
+                        <option value="samara">Самара</option>
+                        <option value="vladivostok">Владивосток</option>
+                    </select>
+                </div>
+
+                <div class="form__group">
+                    <label for="name" class="form__label">Ваше имя</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="phone" class="form__label">Номер мобильного телефона</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999 99 99" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="city__phone" class="form__label">Номер городского телефона</label>
+                    <input type="tel" id="city__phone" name="city__phone" placeholder="+7 (999) 999 99 99" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Ваш email</label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com" class="form__input">
+                </div>
+
+                <div class="form__group">
+                    <label for="address" class="form__label">Адрес стоянки эвакуатора</label>
+                    <input id="address" name="address" class="form__input" required>
+                </div>
+            </form>
+
+            <form class="form__information">
+                <h4>Информация</h4>
+                <div class="form__information--wrapper">
+                    <div class="form__group">
+                        <label for="headline" class="form__label">Заголовок объявления</label>
+                        <input type="text" id="headline" name="headline" class="form__input" placeholder="Не более 50 символов" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="headline__description" class="form__label">Описание объявления</label>
+                        <textarea type="text" id="headline__description" name="headline__description" class="form__input form__input-description" placeholder="Не более 50 символов" required></textarea>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form__prices">
+                <h4>Цены</h4>
+                <div class="form__row">
+                    <div class="form__input-group">
+                        <label for="car" class="form__label">Легковые автомобили</label>
+                        <input type="text" id="car" class="form__input">
+                    </div>
+                    <span class="form__input--span">рублей</span>
+                    <div class="form__additional-info">
+                        <div class="form__checkbox-group">
+                            <input type="checkbox" id="car__service" class="form__checkbox">
+                            <label for="car__service" class="form__checkbox-label">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer" id="footer">
+        <div class="footer__wrapper">
+            <a href="#header" class="footer-logo">
+                <img src="img/Logo-footer.svg" alt="logo-evacuator" width="112" height="112">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#info__call" class="small-text">вызвать эвакуатор</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="small-text">добавить эвакуатор на сайт</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#info" class="small-text">помощь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#price" class="small-text">правила оплаты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="small-text">защита персональных данных</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./elements-js/main.js" type="module"></script>
+</body>
+</html>

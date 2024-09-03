@@ -1,11 +1,13 @@
 .banner,
-.banner__second {
+.banner__second,
+.banner__form {
     width: 100%;
     text-align: center;
     background: url(../img/BG.png) no-repeat center / cover;
 }
 
-.banner__wrapper {
+.banner__wrapper,
+.banner__form--wrapper {
     padding: 4rem 2rem 5rem 2rem;
 }
 

@@ -1,0 +1,193 @@
+.form {
+    padding: 0 2rem 5.3rem;
+    background-color: var(--bg-color);
+}
+
+.form__wrapper {
+    width: 100%;
+    max-width: 798px;
+    margin: 0 auto;
+}
+
+.form__contact,
+.form__information--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+    margin-bottom: 5.3rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form__label {
+    font-size: 2.2rem;
+    color: #4a585e;
+}
+
+.form__input {
+    font-size: 2.6rem;
+    padding: 1.2rem 2.4rem;
+    border: 0.50px solid var(--color-blue);
+    background-color: var(--color-white);
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: #b3c8d1;
+}
+
+.form__input[name="city"] {
+    appearance: none;
+    background: url("../img/select.svg") no-repeat;
+    background-position: right 2.4rem center;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+.form__input[name="city"]::-ms-expand {
+    display: none;
+}
+
+.form__input[name="city"] option {
+    font-size: 2.2rem;
+    color: #4a585e;
+}
+
+.form__input:active,
+.form__input:focus,
+.form__input[name="city"]:active,
+.form__input[name="city"]:focus {
+    border-color: var(--color-blue);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(var(--color-blue), 0.2);
+}
+
+.form__input:hover,
+.form__input[name="city"]:hover {
+    border-color: var(--color-blue);
+}
+
+.form__input:-webkit-autofill,
+.form__input:-webkit-autofill:hover,
+.form__input:-webkit-autofill:focus,
+.form__input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--color-white) inset;
+    background-color: var(--color-white);
+}
+
+.form__information > h4,
+.form__prices > h4 {
+    margin-bottom: 5.3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.form__information > h4::before,
+.form__information > h4::after,
+.form__prices > h4::before,
+.form__prices > h4::after {
+    content: "";
+    flex: 1;
+    height: 0.5px;
+    background-color: var(--color-blue);
+}
+
+.form__information > h4::before,
+.form__prices > h4::before {
+    margin-right: 2rem;
+}
+
+.form__information > h4::after,
+.form__prices > h4::after {
+    margin-left: 2rem;
+} 
+
+.form__input-description {
+    min-height: 34.6rem;
+}
+
+.form__row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
+.form__input-group {
+    max-width: 333px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form__input--span {
+    margin-right: auto;
+    margin-top: 2.5rem;
+}
+
+.form__additional-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.form__checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+
+.form__checkbox {
+    appearance: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+.form__checkbox-label {
+    padding-left: 3rem;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.form__checkbox-label::before {
+    content: '';
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid var(--color-blue);
+    border-radius: 4px;
+    background-color: var(--color-white);
+}
+
+.form__checkbox:checked + .form__checkbox-label::after {
+    content: '';
+    width: 1.4rem;
+    height: 0.8rem;
+    background: url("../img/check.svg") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 480px) {
+    .form__row {
+        gap: 0;
+    }
+}

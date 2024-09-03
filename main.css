@@ -11,6 +11,8 @@
 @import url(blocks-css/priceTabs.css);
 @import url(blocks-css/footer.css);
 @import url(blocks-css/scrollBtn.css);
+@import url(blocks-css/formText.css);
+@import url(blocks-css/form.css);
 
 :root {
 	--color-blue: #0297d4;

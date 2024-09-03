@@ -1,0 +1,29 @@
+.form__text {
+    padding: 6rem 2rem;
+    background: var(--bg-color);
+}
+
+.form__text--wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.form__text--wrapper h4 {
+    position: relative;
+    padding-left: 11.2rem;
+}
+
+.form__text--wrapper h4::before {
+    content: '';
+    width: 10.4rem;
+    height: 9.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/form-icon.svg) no-repeat center / cover;
+}
+
+.form__text--wrapper span {
+    font-weight: 700;
+}
