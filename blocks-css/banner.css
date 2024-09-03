@@ -2,7 +2,7 @@
 .banner__second {
     width: 100%;
     text-align: center;
-    background: url(/img/BG.png) no-repeat center / cover;
+    background: url(../img/BG.png) no-repeat center / cover;
 }
 
 .banner__wrapper {
