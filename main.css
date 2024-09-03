@@ -9,6 +9,8 @@
 @import url(blocks-css/slider.css);
 @import url(blocks-css/info.css);
 @import url(blocks-css/priceTabs.css);
+@import url(blocks-css/footer.css);
+@import url(blocks-css/scrollBtn.css);
 
 :root {
 	--color-blue: #0297d4;
@@ -22,16 +24,6 @@
     --error: #b80101;
 
     --font-family: "SF Pro Text", sans-serif;
-    --second-family: "SFRounded", sans-serif;
-}
-
-@font-face {
-    font-family: 'SFRounded';
-    src: url('fonts/SFRounded-Ultralight.woff2') format('woff2'),
-        url('fonts/SFRounded-Ultralight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
 }
 
 @font-face {

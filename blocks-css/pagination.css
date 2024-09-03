@@ -15,8 +15,8 @@
 .pagination__item,
 .pagination__item--previous,
 .pagination__item--next {
-    width: 52px;
-    height: 52px;
+    width: 5.2rem;
+    height: 5.2rem;
 
     font-size: 2.6rem;
     font-weight: 700;

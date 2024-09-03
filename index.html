@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__wrapper">
             <a href="#" class="header-logo">
                 <img src="img/Logo-header.svg" alt="logo-evacuator" width="112" height="112">
@@ -15,10 +15,10 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#" class="text-p">О проекте</a>
+                        <a href="#advantages" class="text-p">О проекте</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="text-p">Контакты</a>
+                        <a href="#footer" class="text-p">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -238,7 +238,7 @@
         </div>
     </section>
 
-    <section class="info__call">
+    <section class="info__call" id="info__call">
         <div class="info__call--wrapper">
             <div class="info__call--text">
                 <h2>Как вызвать эвакуатор в Москве дешево?</h2>
@@ -293,7 +293,7 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="advantages__wrapper">
             <h2>Преимущества онлайн-сервиса ТутЭвакуатор.Ру</h2>
             <div class="advantages__wrapper--main">
@@ -373,7 +373,7 @@
         </div>
     </section>
 
-    <section class="info">
+    <section class="info" id="info">
         <div class="info__wrapper">
             <div class="info__wrapper--top">
                 <div class="info__wrapper--top-text">
@@ -409,7 +409,7 @@
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="price__wrapper">
             <div class="price__wrapper--tabs">
                 <div class="price__tab price__tab--active" data-btn="price">
@@ -459,7 +459,34 @@
         </div>
     </section>
 
-    
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑</button>
+
+    <footer class="footer" id="footer">
+        <div class="footer__wrapper">
+            <a href="#header" class="footer-logo">
+                <img src="img/Logo-footer.svg" alt="logo-evacuator" width="112" height="112">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#info__call" class="small-text">вызвать эвакуатор</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="small-text">добавить эвакуатор на сайт</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#info" class="small-text">помощь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#price" class="small-text">правила оплаты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="small-text">защита персональных данных</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
     <script src="/elements-js/main.js" type="module"></script>
 </body>
 </html>
