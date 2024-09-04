@@ -93,17 +93,95 @@
 
             <form class="form__prices">
                 <h4>Цены</h4>
-                <div class="form__row">
-                    <div class="form__input-group">
+
+                <div class="form__prices--row">
+                    <div class="form__input--group">
                         <label for="car" class="form__label">Легковые автомобили</label>
                         <input type="text" id="car" class="form__input">
                     </div>
                     <span class="form__input--span">рублей</span>
-                    <div class="form__additional-info">
-                        <div class="form__checkbox-group">
-                            <input type="checkbox" id="car__service" class="form__checkbox">
-                            <label for="car__service" class="form__checkbox-label">Услугу не оказываю</label>
+                    <div class="form__additional--info">
+                        <div class="form__checkbox--group">
+                            <input type="checkbox" id="car__service" name="price__service" value="car__service" class="form__checkbox">
+                            <label for="car__service" class="form__checkbox--label">Услугу не оказываю</label>
                         </div>
+                    </div>
+                </div>
+
+                <div class="form__prices--row">
+                    <div class="form__input--group">
+                        <label for="mototechnics" class="form__label">Мототехника</label>
+                        <input type="text" id="mototechnics" class="form__input">
+                    </div>
+                    <span class="form__input--span">рублей</span>
+                    <div class="form__additional--info">
+                        <div class="form__checkbox--group">
+                            <input type="checkbox" id="mototechnics__service" name="price__service" value="mototechnics__service" class="form__checkbox">
+                            <label for="mototechnics__service" class="form__checkbox--label">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__prices--row">
+                    <div class="form__input--group">
+                        <label for="suv" class="form__label">Внедорожник</label>
+                        <input type="text" id="suv" class="form__input">
+                    </div>
+                    <span class="form__input--span">рублей</span>
+                    <div class="form__additional--info">
+                        <div class="form__checkbox--group">
+                            <input type="checkbox" id="suv__service" name="price__service" value="suv__service" class="form__checkbox">
+                            <label for="suv__service" class="form__checkbox--label">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__prices--row">
+                    <div class="form__input--group">
+                        <label for="minibus" class="form__label">Микроавтобус</label>
+                        <input type="text" id="minibus" class="form__input">
+                    </div>
+                    <span class="form__input--span">рублей</span>
+                    <div class="form__additional--info">
+                        <div class="form__checkbox--group">
+                            <input type="checkbox" id="minibus__service" name="price__service" value="minibus__service" class="form__checkbox">
+                            <label for="minibus__service" class="form__checkbox--label">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__prices--row">
+                    <div class="form__input--group">
+                        <label for="country__rate" class="form__label">Загородный тариф</label>
+                        <input type="text" id="country__rate" class="form__input">
+                    </div>
+                    <span class="form__input--span">рублей</span>
+                    <div class="form__additional--info">
+                        <div class="form__checkbox--group">
+                            <input type="checkbox" id="country__rate__service" name="price__service" value="country__rate__service" class="form__checkbox">
+                            <label for="country__rate__service" class="form__checkbox--label">Услугу не оказываю</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form__photo">
+                <h4>ФОТО</h4>
+                <div class="form__photo--wrapper">
+                    <div class="form__group">
+                    <label for="photo__upload" class="form__label">Прикрепите фотографию к объявлению</label>
+                    <label class="form__file-wrapper">
+                        <input type="file" id="photo__upload" name="photo" class="form__input--file" multiple>
+                        <span class="form__file--button">Загрузить</span>
+                    </label>
+                    
+                    </div>
+                    <div class="form__checkbox--group">
+                        <input type="checkbox" id="policy" name="policy" value="policy" class="form__checkbox">
+                        <label for="policy" class="form__checkbox--label">Я соглашаюсь с правилами использования сервиса, а также с передачей и обработкой моих данных в evarus.ru. Я подтверждаю своё совершеннолетие и ответственность за размещение.</label>
+                    </div>
+                    <div class="form__button--container">
+                        <button type="button" class="btn form__photo--btn">продолжить</button>
                     </div>
                 </div>
             </form>

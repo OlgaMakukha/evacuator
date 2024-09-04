@@ -1,5 +1,5 @@
 .form {
-    padding: 0 2rem 5.3rem;
+    padding: 0 2rem 8rem;
     background-color: var(--bg-color);
 }
 
@@ -10,7 +10,8 @@
 }
 
 .form__contact,
-.form__information--wrapper {
+.form__information--wrapper,
+.form__prices {
     display: flex;
     flex-direction: column;
     gap: 2.8rem;
@@ -80,7 +81,8 @@
 }
 
 .form__information > h4,
-.form__prices > h4 {
+.form__prices > h4,
+.form__photo > h4 {
     margin-bottom: 5.3rem;
     display: flex;
     align-items: center;
@@ -91,7 +93,9 @@
 .form__information > h4::before,
 .form__information > h4::after,
 .form__prices > h4::before,
-.form__prices > h4::after {
+.form__prices > h4::after,
+.form__photo > h4::before,
+.form__photo > h4::after {
     content: "";
     flex: 1;
     height: 0.5px;
@@ -99,12 +103,14 @@
 }
 
 .form__information > h4::before,
-.form__prices > h4::before {
+.form__prices > h4::before,
+.form__photo > h4::before {
     margin-right: 2rem;
 }
 
 .form__information > h4::after,
-.form__prices > h4::after {
+.form__prices > h4::after,
+.form__photo > h4::after {
     margin-left: 2rem;
 } 
 
@@ -112,8 +118,7 @@
     min-height: 34.6rem;
 }
 
-.form__row {
-    width: 100%;
+.form__prices--row {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -121,7 +126,7 @@
     gap: 1.6rem;
 }
 
-.form__input-group {
+.form__input--group {
     max-width: 333px;
     flex: 1;
     display: flex;
@@ -134,14 +139,14 @@
     margin-top: 2.5rem;
 }
 
-.form__additional-info {
+.form__additional--info {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-top: 2.5rem;
 }
 
-.form__checkbox-group {
+.form__checkbox--group {
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -154,14 +159,14 @@
     cursor: pointer;
 }
 
-.form__checkbox-label {
+.form__checkbox--label {
     padding-left: 3rem;
     position: relative;
     user-select: none;
     cursor: pointer;
 }
 
-.form__checkbox-label::before {
+.form__checkbox--label::before {
     content: '';
     width: 2.4rem;
     height: 2.4rem;
@@ -174,7 +179,7 @@
     background-color: var(--color-white);
 }
 
-.form__checkbox:checked + .form__checkbox-label::after {
+.form__checkbox:checked + .form__checkbox--label::after {
     content: '';
     width: 1.4rem;
     height: 0.8rem;
@@ -186,8 +191,91 @@
     transform: translateY(-50%);
 }
 
+.form__file-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.form__input--file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.form__file--label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.form__file--button {
+    width: 100%;
+    max-width: 335px;
+    padding: 1.6rem 10.7rem;
+    margin-bottom: 6rem;
+    
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    background-color: transparent;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.form__file--button:hover {
+    background-color: var(--hover);
+    color: var(--color-white);
+}
+
+.form__photo .form__checkbox--label::before {
+    top: 20%;
+}
+
+.form__photo .form__checkbox:checked + .form__checkbox--label::after {
+    top: 20%;
+}
+
+.form__button--container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2.4rem;
+}
+
+.form__photo--btn {
+    padding: 1.6rem 9.1rem;
+
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+    .form__additional--info {
+        margin-top: 1rem;
+    }
+}
+
 @media screen and (max-width: 480px) {
-    .form__row {
-        gap: 0;
+    .form__prices--row {
+        gap: 0.5rem;
+    }
+
+    .form__additional--info {
+        margin-top: 1rem;
     }
 }
