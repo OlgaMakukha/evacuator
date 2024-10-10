@@ -13,6 +13,7 @@
 @import url(blocks-css/scrollBtn.css);
 @import url(blocks-css/formText.css);
 @import url(blocks-css/form.css);
+@import url(blocks-css/modalCity.css);
 
 :root {
 	--color-blue: #0297d4;

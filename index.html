@@ -13,6 +13,7 @@
                 <img src="img/Logo-header.svg" alt="logo-evacuator" width="112" height="112">
             </a>
             <nav class="header__nav">
+                <span class="header__nav-close">&times;</span>
                 <ul class="header__list">
                     <li class="header__item">
                         <a href="#advantages" class="text-p">О проекте</a>
@@ -21,8 +22,11 @@
                         <a href="#footer" class="text-p">Контакты</a>
                     </li>
                 </ul>
+                <a href="form.html" class="btn header__btn">Добавить объявление</a>
             </nav>
-            <a href="form.html" class="btn header__btn">Добавить объявление</a>
+            <button class="header__burger">
+                <img src="img/burger.svg" alt="Burger Menu">
+            </button>
         </div>
     </header>
 
@@ -487,6 +491,23 @@
             </nav>
         </div>
     </footer>
+
+    <div class="modal__city">
+        <div class="overlay"></div>
+        <div class="modal__city--wrapper">
+            <button type="button" class="modal__city--btn-close"></button>
+                <h2 class="modal__city--title">Выбрать регион</h2>
+                <input type="text" class="modal__city--input" id="city" placeholder="Введите название города">
+                <ul class="modal__city--list">
+                    <li class="modal__city--item">Санкт-Петербург</li>
+                    <li class="modal__city--item">Москва</li>
+                    <li class="modal__city--item">Казань</li>
+                    <li class="modal__city--item">Новосибирск</li>
+                    <li class="modal__city--item">Екатеринбург</li>
+                    <li class="modal__city--item">Нижний Новгород</li>
+                </ul>
+        </div>
+    </div>
     <script src="./elements-js/main.js" type="module"></script>
 </body>
 </html>
